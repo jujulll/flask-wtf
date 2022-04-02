@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% set prof_list = ['Инженер', 'Строитель', 'строитель', 'инженер'] %}
+{% if prof in prof_list %}
+    <h2>Инженерные тренажеры</h2>
+    <p><img src="/static/img/train2.jpg" alt="картинка"></p>
+{% else %}
+    <h2>Научные симуляторы</h2>
+    <p><img src="/static/img/train.png" alt="картинка"></p>
+{% endif %}
+{% endblock %}
